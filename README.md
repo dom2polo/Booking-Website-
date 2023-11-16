@@ -2,7 +2,7 @@
 
 
 ## Description 
-- CSCI 414 Project repository is a school project distinguished by its exceptional database design, using both relational and NoSQL databases with minimal redundancy.
+CSCI 414 Project repository is a school project distinguished by its exceptional database design, using both relational and NoSQL databases with minimal redundancy.
 
 
 ## Booking Website 
@@ -12,7 +12,8 @@ our website leverages the power of both relational and NoSQL databases, includin
 
 
 Language/Software
-    - 
+    - NoSQL
+    - HTML, CSS, JS
 
 ## Features 
 Tabs/Pages: 
