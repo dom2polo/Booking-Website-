@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>Apolo Serenity </title>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script> 
+        $(function(){
+          $("#header").load("header.html"); 
+          $("#footer").load("footer.html"); 
+        });
+        </script> 
+
+
+</head>
+<body>
+    <nav>
+        <div class="nav__logo">Apolo Serenity</div>
+        <ul class="nav__links">
+            <li class="link"><a href="index.html">Home</a></li>
+            <li class="link"><a href="booking/booking.html">Book</a></li>
+            <li class="link"><a href="about/about.html">About Me</a></li>
+            <li class="link"><a href="contact/contact.html">Contact Us</a></li>
+            <li class="link"><a href="signin/signin.html">Sign In</a></li>
+        </ul>
+    </nav>
+
+    <header class="section__container header__container">
+        <div class="header__image__container">
+            <div class="header__content">
+                <h1>Your Massage Studio</h1>
+                <p> Relax, Renew, Revitalize </p>
+            </div>
+
+            <!-- form container (IGNORED) -->
+
+            <div class="booking__container">
+                <form action="">
+                    <div class="form__group">
+                        <div class="input__group">
+                            <input type="text" name="" id="">
+                            <label for=""> Location </label>
+                        </div>
+                            <p> Where are you going? </p>
+                    </div>
+                    <div class="form__group">
+                        <div class="input__group">
+                            <input type="text" name="" id="">
+                            <label for=""> Check In </label>
+                        </div>
+                            <p> Add Date </p>
+                    </div>
+                    <div class="form__group">
+                        <div class="input__group">
+                            <input type="text" name="" id="">
+                            <label for=""> Check Out </label>
+                        </div>
+                            <p> Add Date </p>
+                    </div>
+                    <div class="form__group">
+                        <div class="input__group">
+                            <input type="text" name="" id="">
+                            <label for=""> Guests </label>
+                        </div>
+                            <p> Add Guest </p>
+                    </div>
+                </form>
+                <button class="btn"><i class="ri-search-line"></i></button>
+            </div>
+
+            <!-- form container ends -->
+        </div>
+    </header>
+
+
+    <!-- services container  -->
+    <section class="section__container services__container">
+        <h2 class="section__header">Our Services</h2>
+        <div class="services__grid">
+            <div class="services__card">
+                <img src="images/services/deep_tissue.jpg" alt="our service">
+                <div class="services__content">
+                    <div class="services__card__header">
+                        <h4> 30 Min</h4>
+                        <h4> $35 </h4>
+                    </div>
+                        <p> Austin, MN</p>
+                        <p>
+                            Experience the therapeutic benefits of deep tissue massage. This technique focuses on
+                            releasing tension and tightness in the deeper layers of muscles. Ideal for addressing
+                            chronic pain and improving flexibility.
+                        </p>
+                </div>
+            </div>
+            <div class="services__card">
+                <img src="images/services/hot_stone.jpg" alt="our service">
+                <div class="services__content">
+                    <div class="services__card__header">
+                        <h4> 1 Hr</h4>
+                        <h4> $65 </h4>
+                    </div>
+                        <p> Austin, MN</p>
+                        <p>
+                            Indulge in the soothing warmth of hot stone massage. Smooth, heated stones are strategically
+                            placed on the body and used in combination with massage techniques to promote relaxation,
+                            alleviate tension, and enhance overall well-being.
+                        </p>
+                </div>
+            </div>
+            <div class="services__card">
+                <img src="images/services/myofascial.jpg" alt="our service">
+                <div class="services__content">
+                    <div class="services__card__header">
+                        <h4> 90 Min</h4>
+                        <h4> $95 </h4>
+                    </div>
+                        <p> Austin, MN</p>
+                        <p>
+                            Restore balance to your body with myofascial release. This technique targets the fascia,
+                            the connective tissue surrounding muscles, to release restrictions and improve range of motion.
+                            Ideal for addressing postural imbalances and promoting flexibility.
+                        </p>
+                </div>
+            </div>
+            <div class="services__card">
+                <img src="images/services/structural.jpg" alt="our service">
+                <div class="services__content">
+                    <div class="services__card__header">
+                        <h4> 2 Hr</h4>
+                        <h4> $135 </h4>
+                    </div>
+                        <p> Austin, MN</p>
+                        <p>
+                            Experience a customized approach to massage with structural integration. This technique
+                            focuses on aligning and balancing the body's structure, promoting better posture,
+                            flexibility, and overall well-being.
+                        </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- services container end  -->
+
+    <!-- ******************************************************* -->
+
+
+    <!-- client container  -->
+    <section class="section__container client">
+        <div class="section__container client__container">
+          <h2 class="section__header">What our client say</h2>
+          <div class="client__grid">
+            <div class="client__card">
+              <img src="images/users/females.jpg" alt="client" />
+              <p>
+                "I had an amazing experience at Your Massage Studio! The deep tissue massage was exactly what I needed
+                to relieve tension and improve my flexibility. The therapist was professional, and the atmosphere was
+                so calming. I can't wait to book my next session!"
+              </p>
+            </div>
+            <div class="client__card">
+              <img src="images/users/male.jpg" alt="client" />
+              <p>
+                "The hot stone massage at Your Massage Studio was a game-changer for me. The combination of soothing heat 
+                and expert massage techniques left me feeling utterly relaxed and rejuvenated. The ambiance of the studio 
+                added to the overall experience. Can't recommend it enough!"
+              </p>
+            </div>
+            <div class="client__card">
+              <img src="images/users/female_2.jpg" alt="client" />
+              <p>
+                "I recently tried the myofascial release massage, and it exceeded my expectations. 
+                The therapist was knowledgeable and focused on my specific needs. I felt immediate 
+                relief from tension, and the effects lasted for days. Your Massage Studio has become 
+                my go-to for therapeutic massages!"
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- client container end  -->
+
+
+<!-- ***************************************************************  -->
+<!-- footer container  -->
+<footer>
+    <div class="main-content">
+      <div class="left box">
+        <h2>Location</h2>
+        <div class="content">
+          
+            <!-- insert map -->
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d307.7903343843119!2d-122.41941569080157!3d37.77492949767256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1605706721985!5m2!1sen!2sus"
+            width="100%"
+            height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+        ></iframe>
+          
+          <div class="social">
+            <a href="https://facebook.com"><span class="fab fa-facebook-f"></span></a>
+            <a href="#"><span class="fab fa-twitter"></span></a>
+            <a href="https://instagram.com"><span class="fab fa-instagram"></span></a>
+            <a href="https://youtube.com"><span class="fab fa-youtube"></span></a>
+          </div>
+        </div>
+      </div>
+      <div class="right box">
+        <h2>Address</h2>
+        <div class="content">
+          <div class="place">
+            <span class="fas fa-map-marker-alt"></span>
+            <span class="text">St. Cloud, MN</span>
+          </div>
+          <div class="phone">
+            <span class="fas fa-phone-alt"></span>
+            <span class="text">+123-456789</span>
+          </div>
+          <div class="email">
+            <span class="fas fa-envelope"></span>
+            <span class="text">abc@example.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <center>
+        <span class="credit">Created By <a href="https://www.codingnepalweb.com">Dom2Develop</a> | </span>
+        <span class="far fa-copyright"></span><span> 2023 All rights reserved.</span>
+      </center>
+    </div>
+  </footer>
+
+
+<!-- footer container  ends -->
+
+</body>
+</html>
+
+<!-- 10:11 -->
