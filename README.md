@@ -36,7 +36,7 @@ Tabs/Pages:
 Book Now: 
     - Offer services 
         - Descriptions
-        - Deals
+        - Services
             - 30 min for $35 
             - 1 hr for $65 
             - 90 min for $95 
@@ -50,9 +50,8 @@ Book Now:
 ## Relational Database Schema:
 Table: Clients
   - ClientID (Primary Key)
-  - Name
+  - Name (first, last)
   - Email
-  - Phone
 
 Table: Services
   - ServiceID (Primary Key)
@@ -61,7 +60,7 @@ Table: Services
 
 Table: Providers
   - ProviderID (Primary Key)
-  - Name
+  - Name (fist, last)
   - Table: Bookings
 
 BookingID (Primary Key)
