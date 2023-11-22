@@ -7,13 +7,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="/signin/signin.css">
+    <link rel="stylesheet" href="signin.css">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Login Form | CodingLab</title> 
-    <link rel="stylesheet" href="signin.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <title>Login Form</title> 
 
 </head>
 <body>
@@ -31,10 +30,10 @@
     
     <div class="container">
         <div class="wrapper">
-          <div class="title"><span>Welcome!</span></div>
+          <div class="title"><span>Login!</span></div>
           <form action="#">
             <div class="row">
-              <i class="fas fa-user"></i>
+              <i class="fas fa-email"></i>
               <input type="text" placeholder="Email or Phone" required>
             </div>
             <div class="row">
@@ -45,44 +44,12 @@
             <div class="row button">
               <input type="submit" value="Login">
             </div>
-            <div class="signup-link">Not a member? <a href="#">Signup now</a></div>
+            <div class="signup-link">Not a member? <a href="signup.html">Signup now</a></div>
           </form>
         </div>
       </div>
 
-
-
-    <!-- footer container  -->
-    <!-- <footer class="footer">
-        <div class="waves">
-            <div class="wave" id="wave1"></div>
-            <div class="wave" id="wave2"></div>
-            <div class="wave" id="wave3"></div>
-            <div class="wave" id="wave4"></div>
-        </div>
-
-        <ul class="icons">
-            <div class="row">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-                <a href="#"><i class="fa fa-youtube"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-            </div>
-        </ul>
-
-        <ul class="menu">
-            <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">About</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
-            <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
-        </ul>
-        <p>&copy;2023 Dom2Dev | All Rights Reserved</p>
-    </footer> -->
-    <!-- footer container  ends -->
-
-
         <!-- Include the JavaScript file -->
-        <script src="/signin/signin.js"></script>
+        <script src="signin.js"></script>
 </body>
 </html>
