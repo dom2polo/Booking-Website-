@@ -84,7 +84,7 @@ Table: Bookings
   "phone": "123-456-7890",
   "email": "john.doe@example.com"
   }
-```
+  ```
 - Service collection:
   ```{sql}
     {
@@ -92,7 +92,7 @@ Table: Bookings
       "description": "1 Hour Massage",
       "price": 50.00
     }
-```
+  ```
 - Providers  collection:
   ```{sql}
     {
@@ -102,7 +102,7 @@ Table: Bookings
         "last": "Smith"
       }
     }
-```
+  ```
 
 Booking Collection
   ```{sql}
@@ -115,7 +115,7 @@ Booking Collection
       "time": "10:00 AM",
       "note": "Special request for the service",
     }
-```
+  ```
 
 
 ## Relational Database Queries   
