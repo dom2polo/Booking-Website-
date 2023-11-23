@@ -104,7 +104,7 @@ Table: Bookings
     }
   ```
 
-Booking Collection
+- Booking Collection
   ```{sql}
     {
       "_id": ObjectId("..."),
