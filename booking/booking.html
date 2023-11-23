@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="booking.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>Apolo Serenity </title>
 </head>
 <body>
@@ -74,7 +75,38 @@
         </div>
     </section>
 
-    <!-- services container end  -->
+    <!-- services container end  -->\
+
+    <div class="section__container header__container">
+      <main>
+        <div class="booking-container">
+          <form action="#" id="appoint-form" method="POST">
+            <h1 id="form-head">Booking Form</h1>
+            <label for="select service" id="select-service" class="format">Select Services </label>
+              <select id="dropdown">
+                <option value="select your city" disabled selected>Select Your Service </option>
+                <option value="30 min"> 30 Minutes </option>
+                <option value="1 Hr">1 Hour</option>
+                <option value="30 min"> 90 Minutes</option>
+                <option value="2 Hr">2 Hour </option>
+              </select>
+            <label for="dateandtime" id="date-time" class="format">Select Date and Time </label>
+              <input type="date" id="date" name="date" class="dtt"  required>
+              <input type="time" id="time" name="utime" min="8:00" max="20:00" value="8:00" class="dtt" required>
+              <small id="note">(Note:Visiting hours above)</small>
+            <label for="personal details" id="p-details" class="format">Personal Details</label>
+              <input type="text" id="name" class="person-detail" placeholder="Full name*" name="uname" maxlength="20" required>
+              <input type="tel" id="mobile" class="person-detail" name="ucontact" placeholder="Mobile number*" maxlength="10" required>
+              <input type="email" placeholder="Email(optional)" id="email" class="person-detail" name="uemail" required>
+              <textarea id="message" name="umessage" rows="5" cols="3" placeholder="Type text message" class="person-detail"></textarea>
+            <button type="submit" id="submit" value="Submit" onclick="">Submit </button>
+      
+          </form>
+        </div>
+
+      </main>
+    
+    <!-- Booking the service options -->
 
 <!-- ***************************************************************  -->
 <!-- footer container  -->
