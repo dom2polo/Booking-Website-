@@ -91,19 +91,28 @@
                 <option value="2 Hr">2 Hour </option>
               </select>
             <label for="dateandtime" id="date-time" class="format">Select Date and Time </label>
-              <input type="date" id="date" name="date" class="dtt"  required>
-              <input type="time" id="time" name="utime" min="8:00" max="20:00" value="8:00" class="dtt" required>
+              <input type="date" id="date" name="date" class="dtt" >
+              <input type="time" id="time" name="utime" min="8:00" max="20:00" value="8:00" class="dtt">
             <label for="personal details" id="p-details" class="format">Personal Details</label>
-              <input type="text" id="name" class="person-detail" placeholder="Full name*" name="uname" maxlength="20" required>
-              <input type="tel" id="mobile" class="person-detail" name="ucontact" placeholder="Mobile number*" maxlength="10" required>
-              <input type="email" placeholder="Email" id="email" class="person-detail" name="uemail" required>
+              <input type="text" id="name" class="person-detail" placeholder="Full name*" name="uname" maxlength="20">
+              <input type="tel" id="mobile" class="person-detail" name="ucontact" placeholder="Mobile number*" maxlength="10">
+              <input type="email" placeholder="Email" id="email" class="person-detail" name="uemail">
               <textarea id="message" name="umessage" rows="5" cols="3" placeholder="Type text message" class="person-detail"></textarea>
-            <button type="submit" id="submit" value="Submit" onclick="">Submit </button>
-      
+
+                    <button type="submit" id="submit" value="Submit" onclick="submitForm()">Submit </button>
+            </div>
           </form>
         </div>
-
       </main>
+    </div>
+
+  <!-- Popup dialog -->
+  <dialog id="popup">
+    <p>Form submitted successfully!</p>
+    <button onclick="closePopup()">Close</button>
+  </dialog>
+
+
     
     <!-- Booking the service options -->
 
@@ -163,6 +172,7 @@
 <!-- footer container  ends -->
 
 <script src="booking.js"></script>
+
 
 </body>
 </html>

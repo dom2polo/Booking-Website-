@@ -16,3 +16,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
     officeHoursContainer.textContent = `Today's Office Hours: ${officeHours[daysOfWeek[currentDay]]}`;
 });
+
+
+function submitForm() {
+    // Get values from the form
+    var service = document.getElementById("dropdown").value;
+    var date = document.getElementById("date").value;
+    var time = document.getElementById("time").value;
+    var name = document.getElementById("name").value;
+    var mobile = document.getElementById("mobile").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+
+    // Check if all required fields are filled
+    if (service !== "" && date !== "" && time !== "" && name !== "" && mobile !== "" && email !== "") {
+      // Display a pop-up message
+      alert("Form submitted!\nService: " + service + "\nDate: " + date + "\nTime: " + time + "\nName: " + name + "\nMobile: " + mobile + "\nEmail: " + email + "\nMessage: " + message);
+    } else {
+      // Display an error message or take any other appropriate action
+      alert("Please fill in all required fields.");
+    }
+  }
