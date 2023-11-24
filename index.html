@@ -8,16 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <title>Apolo Serenity </title>
-
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
-    <script> 
-        $(function(){
-          $("#header").load("header.html"); 
-          $("#footer").load("footer.html"); 
-        });
-        </script> 
-
 
 </head>
 <body>
@@ -39,7 +30,7 @@
                 <p> Relax, Renew, Revitalize </p>
             </div>
 
-            <!-- form container (IGNORED) -->
+    <!-- form container (can IGNORE later or add on) -->
 
             <div class="booking__container">
                 <form action="">
@@ -74,13 +65,15 @@
                 </form>
                 <button class="btn"><i class="ri-search-line"></i></button>
             </div>
-
-            <!-- form container ends -->
         </div>
+
+    <!-- form container ends -->
+
     </header>
 
-
-    <!-- services container  -->
+<!-- ---------------------------------------------------------- -->
+    
+<!-- services container  -->
     <section class="section__container services__container">
         <h2 class="section__header">Our Services</h2>
         <div class="services__grid">
@@ -147,12 +140,11 @@
         </div>
     </section>
 
-    <!-- services container end  -->
+<!-- services container end  -->
 
-    <!-- ******************************************************* -->
+<!-- ----------------------------------------------------------------------------- -->
 
-
-    <!-- client container  -->
+<!-- client container  -->
     <section class="section__container client">
         <div class="section__container client__container">
           <h2 class="section__header">What our client say</h2>
@@ -186,74 +178,63 @@
         </div>
       </section>
 
-    <!-- client container end  -->
+<!-- client container end  -->
 
+<!-- -----------------------------------------------------------------------------  -->
 
-<!-- ***************************************************************  -->
 <!-- footer container  -->
-<footer>
-    <div class="main-content">
-      <div class="left box">
-        <h2>Location</h2>
-        <div class="content">
-          
-            <!-- insert map -->
-            <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d307.7903343843119!2d-122.41941569080157!3d37.77492949767256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1605706721985!5m2!1sen!2sus"
-            width="100%"
-            height="300"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-        ></iframe>
-          
-          <div class="social">
-            <a href="https://facebook.com"><span class="fab fa-facebook-f"></span></a>
-            <a href="#"><span class="fab fa-twitter"></span></a>
-            <a href="https://instagram.com"><span class="fab fa-instagram"></span></a>
-            <a href="https://youtube.com"><span class="fab fa-youtube"></span></a>
+    <footer>
+        <div class="main-content">
+          <div class="left box">
+            <h2>Location</h2>
+            <div class="content">
+              
+                <!-- insert map -->
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d307.7903343843119!2d-122.41941569080157!3d37.77492949767256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1605706721985!5m2!1sen!2sus"
+                width="100%"
+                height="300"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+            ></iframe>
+              
+              <div class="social">
+                <a href="https://facebook.com"><span class="fab fa-facebook-f"></span></a>
+                <a href="#"><span class="fab fa-twitter"></span></a>
+                <a href="https://instagram.com"><span class="fab fa-instagram"></span></a>
+                <a href="https://youtube.com"><span class="fab fa-youtube"></span></a>
+              </div>
+            </div>
+          </div>
+          <div class="right box">
+            <h2>Address</h2>
+            <div class="content">
+              <div class="place">
+                <span class="fas fa-map-marker-alt"></span>
+                <span class="text">St. Cloud, MN</span>
+              </div>
+              <div class="phone">
+                <span class="fas fa-phone-alt"></span>
+                <span class="text">+123-456789</span>
+              </div>
+              <div class="email">
+                <span class="fas fa-envelope"></span>
+                <span class="text">abc@example.com</span>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="right box">
-        <h2>Address</h2>
-        <div class="content">
-          <div class="place">
-            <span class="fas fa-map-marker-alt"></span>
-            <span class="text">St. Cloud, MN</span>
-          </div>
-          <div class="phone">
-            <span class="fas fa-phone-alt"></span>
-            <span class="text">+123-456789</span>
-          </div>
-          <div class="email">
-            <span class="fas fa-envelope"></span>
-            <span class="text">abc@example.com</span>
-          </div>
+        <div class="bottom">
+          <center>
+            <span class="credit">Created By <a href="https://www.codingnepalweb.com">Dom2Develop</a> | </span>
+            <span class="far fa-copyright"></span><span> 2023 All rights reserved.</span>
+          </center>
         </div>
-      </div>
-    </div>
-    <div class="bottom">
-      <center>
-        <span class="credit">Created By <a href="https://www.codingnepalweb.com">Dom2Develop</a> | </span>
-        <span class="far fa-copyright"></span><span> 2023 All rights reserved.</span>
-      </center>
-    </div>
-  </footer>
-
+    </footer>
 
 <!-- footer container  ends -->
 
 </body>
 </html>
-
-
-  <!-- <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/bootstrap.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
-  </script>
-  <script src="js/custom.js"></script> -->
-  <!-- Google Map -->
-  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script> -->
-  <!-- End Google Map -->
 
