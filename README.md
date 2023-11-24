@@ -51,6 +51,7 @@ Book Now:
 Table: Clients
   - ClientID (Primary Key)
   - Name (first, last)
+  - Phone
   - Email
 
 Table: Services
@@ -61,31 +62,61 @@ Table: Services
 Table: Providers
   - ProviderID (Primary Key)
   - Name (fist, last)
-  - Table: Bookings
 
-BookingID (Primary Key)
+Table: Bookings
+  - BookingID (Primary Key)
   - ClientID (Foreign Key referencing Clients)
   - ServiceID (Foreign Key referencing Services)
   - ProviderID (Foreign Key referencing Providers)
+  - Date (dd/mm/yyyy)
   - Time
-  - ConfirmationStatus
+  - Note
 
 ## NoSQL Database Schema (for unstructured data):
+- Clients collection:
+  ```{sql}
+  {
+  "_id": ObjectId("..."),
+  "name": {
+    "first": "John",
+    "last": "Doe"
+  },
+  "phone": "123-456-7890",
+  "email": "john.doe@example.com"
+  }
+  ```
+- Service collection:
+  ```{sql}
+    {
+      "_id": ObjectId("..."),
+      "description": "1 Hour Massage",
+      "price": 50.00
+    }
+  ```
+- Providers  collection:
+  ```{sql}
+    {
+      "_id": ObjectId("..."),
+      "name": {
+        "first": "Jane",
+        "last": "Smith"
+      }
+    }
+  ```
 
-Collection: HomeContent
-  - DocumentID
-  - BriefInfo
-  - WelcomingNotes
-  - Collection: ContactInfo
+- Booking Collection
+  ```{sql}
+    {
+      "_id": ObjectId("..."),
+      "clientID": ObjectId("..."),   // Reference to the Clients collection
+      "serviceID": ObjectId("..."),  // Reference to the Services collection
+      "providerID": ObjectId("..."), // Reference to the Providers collection
+      "date": "2023-01-01",
+      "time": "10:00 AM",
+      "note": "Special request for the service",
+    }
+  ```
 
-DocumentID
-  - Phone
-  - Email
-  - Location
-
-Collection: OpeningHours
-  - DocumentID
-  - Availability
 
 ## Relational Database Queries   
   - Get client details for a booking 
